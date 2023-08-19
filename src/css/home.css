@@ -1,0 +1,212 @@
+
+.banner {
+    width: 100%;
+    height: 60vh;
+/*     background: rgb(255, 202, 133); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .banner-image {
+    width: 60%;
+    height: 100%;
+} */
+.banner-image {
+    width: 40%;
+    height: 100%;
+}
+
+.text {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.span-text {
+    font-size: 60px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.p-text {
+    font-size: 30px;
+    text-align: center;
+}
+
+.button{
+    width: 65%;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(9, 7, 27);
+    font-size: 20px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.section-carousel {
+    background: rgba(211, 208, 205, 0.445);
+    margin: 70px 10px 50px 10px;
+    height: 30vh;
+}
+
+img {
+    margin: 0 auto;
+}
+
+/* Dans votre fichier CSS */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: black; /* Couleur noire pour les boutons */
+}
+
+
+
+@media only screen and (max-width:1270px) {
+
+    .banner {
+        height: 35vh;
+        justify-content: start;
+        align-items: center;
+    }
+    
+.span-text {
+    font-size: 30px;
+}
+
+}
+
+@media only screen and (max-width:900px) {
+    
+.banner {
+    height: 40vh;
+}
+
+.banner-image {
+    width: 60%;
+    height: 100%;
+}
+.text {
+    width: 40%;
+    height: 30%;
+/*     position: absolute;
+    top: 80px;
+    left: 60%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.span-text {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.p-text {
+    font-size: 20px;
+    text-align: start;
+}
+
+
+ }
+
+@media only screen and (max-width:600px) {
+    
+.banner {
+    height: 35vh;
+}
+
+.banner-image {
+    width: 60%;
+    height: 100%;
+}
+.text {
+    width: 40%;
+    height: 30%;
+/*     position: absolute;
+    top: 80px;
+    left: 60%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.span-text {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.p-text {
+    font-size: 20px;
+    text-align: start;
+}
+
+
+.btn{
+    width: 65%;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(9, 7, 27);
+    font-size: 18px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+ }
+
+@media only screen and (max-width:400px) {
+    
+.banner {
+    height: 32vh;
+}
+
+.banner-image {
+    width: 50%;
+    height: 100%;
+}
+.text {
+    width: 50%;
+    height: 30%;
+/*     position: absolute;
+    top: 80px;
+    left: 60%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.span-text {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.p-text {
+    font-size: 15px;
+    text-align: start;
+}
+
+
+.btn{
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(9, 7, 27);
+    font-size: 15px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+ }
