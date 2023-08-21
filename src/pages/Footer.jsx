@@ -8,9 +8,9 @@ function Footer() {
       <section className='footer-content'>
             <nav className='nav-footer'>
               <ul>
-                <Link className='link-footer'>Contactez-nous</Link>
-                <Link className='link-footer'>Copyright</Link>
-                <Link className='link-footer'>Qui sommes-nous?</Link>
+                <Link to="/contact" className='link-footer'>Contactez-nous</Link>
+                <Link to="/copyright" className='link-footer'>Copyright</Link>
+                <Link to="/about" className='link-footer'>Qui sommes-nous?</Link>
               </ul>
             </nav>
       </section>
