@@ -5,7 +5,9 @@ import Footer from './Footer'
 import Login from './Login'
 import Signup from './Signup'
 import Cart from './Cart'
-import Home from './Home';;
+import Home from './Home';
+
+
 
 
 function Layout() {

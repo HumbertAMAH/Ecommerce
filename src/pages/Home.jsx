@@ -1,16 +1,20 @@
-import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import '../css/home.css'
-/* import woman from '../asset/woman.jpg' */
 import dressing from '../asset/dressing.png'
 import jordan1 from '../asset/jordan1.png'
 import jordan2 from '../asset/jordan2.png'
-/* import jordan3 from '../asset/jordan3.png' */
 import jordan4 from '../asset/jordan4.png'
 import jordan5 from '../asset/jordan5.png'
+import { useState } from 'react';
+import Modal from './Modal';
 
-function Home() {
+
+function Home(showModal) {
+  const [modal, setModal] = useState (false)
+  showModal = ()=>{
+    setModal(!modal)
+  }
 
   return (
     <div>
@@ -35,19 +39,22 @@ function Home() {
       />
         <Carousel.Caption>
 {/*           <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>  */}
         </Carousel.Caption>
+        <input onClick={showModal} className='input-button' type="button" value="Detail" />
+        {modal && <Modal  showModal = {showModal} />}
       </Carousel.Item>
-      <Carousel.Item>
+      {/* <Carousel.Item>
       <img
         className='d-block '
         src={jordan2}
         alt='first slide'
       />
-        <Carousel.Caption>
+        <Carousel.Caption> */}
 {/*           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-        </Carousel.Caption>
+     {/*    </Carousel.Caption>
+        <input className='input-button' type="button" value="Detail" />
       </Carousel.Item>
       <Carousel.Item>
       <img
@@ -55,13 +62,14 @@ function Home() {
         src={jordan5}
         alt='first slide'
       />
-        <Carousel.Caption>
+        <Carousel.Caption> */}
 {/*           <h3>Third slide label</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p> */}
-        </Carousel.Caption>
-      </Carousel.Item>
+    {/*     </Carousel.Caption>
+        <input className='input-button' type="button" value="Detail" />
+      </Carousel.Item> */}
     </Carousel>
       </section>
       <section className='section-carousel'>
@@ -76,6 +84,7 @@ function Home() {
 {/*           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
         </Carousel.Caption>
+        <input className='input-button' type="button" value="Detail" />
       </Carousel.Item>
       <Carousel.Item>
       <img
@@ -87,6 +96,7 @@ function Home() {
 {/*           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
         </Carousel.Caption>
+        <input className='input-button' type="button" value="Detail" />
       </Carousel.Item>
       <Carousel.Item>
       <img
@@ -100,6 +110,7 @@ function Home() {
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p> */}
         </Carousel.Caption>
+        <input className='input-button' type="button" value="Detail" />
       </Carousel.Item>
     </Carousel>
       </section>
@@ -115,6 +126,7 @@ function Home() {
 {/*           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
         </Carousel.Caption>
+        <input className='input-button' type="button" value="Detail" />
       </Carousel.Item>
       <Carousel.Item>
       <img
@@ -126,6 +138,7 @@ function Home() {
 {/*           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
         </Carousel.Caption>
+        <input className='input-button' type="button" value="Detail" />
       </Carousel.Item>
       <Carousel.Item>
       <img
@@ -139,6 +152,7 @@ function Home() {
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p> */}
         </Carousel.Caption>
+        <input className='input-button' type="button" value="Detail" />
       </Carousel.Item>
     </Carousel>
       </section>
@@ -154,6 +168,7 @@ function Home() {
 {/*           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
         </Carousel.Caption>
+        <input className='input-button' type="button" value="Detail" />
       </Carousel.Item>
       <Carousel.Item>
       <img
@@ -165,6 +180,7 @@ function Home() {
 {/*           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
         </Carousel.Caption>
+        <input className='input-button' type="button" value="Detail" />
       </Carousel.Item>
       <Carousel.Item>
       <img
@@ -178,6 +194,7 @@ function Home() {
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p> */}
         </Carousel.Caption>
+        <input className='input-button' type="button" value="Detail" />
       </Carousel.Item>
     </Carousel>
       </section>
@@ -193,6 +210,7 @@ function Home() {
 {/*           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
         </Carousel.Caption>
+        <input className='input-button' type="button" value="Detail" />
       </Carousel.Item>
       <Carousel.Item>
       <img
@@ -204,6 +222,7 @@ function Home() {
 {/*           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
         </Carousel.Caption>
+        <input className='input-button' type="button" value="Detail" />
       </Carousel.Item>
       <Carousel.Item>
       <img
@@ -217,6 +236,7 @@ function Home() {
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p> */}
         </Carousel.Caption>
+        <input className='input-button' type="button" value="Detail" />
       </Carousel.Item>
     </Carousel>
       </section>
