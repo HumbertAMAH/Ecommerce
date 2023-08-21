@@ -54,16 +54,6 @@ header {
     text-decoration: none;
 }
 
-/* .link:hover {
-    color: #11101b;
-    background-color: #fefefe;
-}
-
-  .active {
-    color: #11101b;
-    background-color: #fefefe;
-}  */
-
 @media only screen and (max-width:1320px) {
    header {
     padding: 0 50px; 
@@ -93,7 +83,7 @@ header {
         left: 0;
         right: 0;
         width: 100%;
-        background-color: rgb(255, 202, 133);
+        background-color: rgb(202, 197, 189);
         transition: 0.2s;
          overflow: hidden; 
      }

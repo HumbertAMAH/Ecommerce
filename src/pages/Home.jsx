@@ -20,7 +20,7 @@ function Home() {
           <div className='text'>
             <span className='span-text'>Lorem,  <br /> ipsum dolor <br />bsum placeat </span>
             <p className='p-text'>Inscrivez vous pour publier des article </p>
-            <button className='button'>Connectez-vous</button>
+            <button>Connectez-vous</button>
           </div>
         </div>
       </section>
