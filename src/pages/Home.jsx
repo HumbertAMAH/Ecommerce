@@ -1,20 +1,34 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from 'react-bootstrap/Carousel';
 import '../css/home.css'
 import dressing from '../asset/dressing.png'
-import jordan1 from '../asset/jordan1.png'
-import jordan2 from '../asset/jordan2.png'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css'
 import jordan4 from '../asset/jordan4.png'
 import jordan5 from '../asset/jordan5.png'
-import { useState } from 'react';
-import Modal from './Modal';
 
 
-function Home(showModal) {
-  const [modal, setModal] = useState (false)
-  showModal = ()=>{
-    setModal(!modal)
-  }
+function Home() {
+ 
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+ 
 
   return (
     <div>
@@ -23,223 +37,90 @@ function Home(showModal) {
           <img  className='banner-image' src={dressing} alt="" />
           <div className='text'>
             <span className='span-text'>Lorem,  <br /> ipsum dolor <br />bsum placeat </span>
-            <p className='p-text'>Inscrivez vous pour publier des article </p>
-            <button>Connectez-vous</button>
+        {/*     <p className='p-text'>Inscrivez vous pour publier des article </p>
+             <button className='button'>Connectez-vous</button>  */}
           </div>
         </div>
       </section>
 
-      <section className='section-carousel'>
-      <Carousel>
-      <Carousel.Item>
-      <img
-        className='d-block '
-        src={jordan1}
-        alt='first slide'
-      />
-        <Carousel.Caption>
-{/*           <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>  */}
-        </Carousel.Caption>
-        <input onClick={showModal} className='input-button' type="button" value="Detail" />
-        {modal && <Modal  showModal = {showModal} />}
-      </Carousel.Item>
-      {/* <Carousel.Item>
-      <img
-        className='d-block '
-        src={jordan2}
-        alt='first slide'
-      />
-        <Carousel.Caption> */}
-{/*           <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-     {/*    </Carousel.Caption>
-        <input className='input-button' type="button" value="Detail" />
-      </Carousel.Item>
-      <Carousel.Item>
-      <img
-        className='d-block'
-        src={jordan5}
-        alt='first slide'
-      />
-        <Carousel.Caption> */}
-{/*           <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p> */}
-    {/*     </Carousel.Caption>
-        <input className='input-button' type="button" value="Detail" />
-      </Carousel.Item> */}
-    </Carousel>
-      </section>
-      <section className='section-carousel'>
-      <Carousel >
-      <Carousel.Item>
-      <img
-        className='d-block '
-        src={jordan1}
-        alt='first slide'
-      />
-        <Carousel.Caption>
-{/*           <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-        </Carousel.Caption>
-        <input className='input-button' type="button" value="Detail" />
-      </Carousel.Item>
-      <Carousel.Item>
-      <img
-        className='d-block '
-        src={jordan2}
-        alt='first slide'
-      />
-        <Carousel.Caption>
-{/*           <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-        </Carousel.Caption>
-        <input className='input-button' type="button" value="Detail" />
-      </Carousel.Item>
-      <Carousel.Item>
-      <img
-        className='d-block'
-        src={jordan4}
-        alt='first slide'
-      />
-        <Carousel.Caption>
-{/*           <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p> */}
-        </Carousel.Caption>
-        <input className='input-button' type="button" value="Detail" />
-      </Carousel.Item>
-    </Carousel>
-      </section>
-      <section className='section-carousel'>
-      <Carousel>
-      <Carousel.Item>
-      <img
-        className='d-block '
-        src={jordan1}
-        alt='first slide'
-      />
-        <Carousel.Caption>
-{/*           <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-        </Carousel.Caption>
-        <input className='input-button' type="button" value="Detail" />
-      </Carousel.Item>
-      <Carousel.Item>
-      <img
-        className='d-block '
-        src={jordan2}
-        alt='first slide'
-      />
-        <Carousel.Caption>
-{/*           <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-        </Carousel.Caption>
-        <input className='input-button' type="button" value="Detail" />
-      </Carousel.Item>
-      <Carousel.Item>
-      <img
-        className='d-block'
-        src={jordan1}
-        alt='first slide'
-      />
-        <Carousel.Caption>
-{/*           <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p> */}
-        </Carousel.Caption>
-        <input className='input-button' type="button" value="Detail" />
-      </Carousel.Item>
-    </Carousel>
-      </section>
-      <section className='section-carousel'>
-      <Carousel>
-      <Carousel.Item>
-      <img
-        className='d-block '
-        src={jordan4}
-        alt='first slide'
-      />
-        <Carousel.Caption>
-{/*           <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-        </Carousel.Caption>
-        <input className='input-button' type="button" value="Detail" />
-      </Carousel.Item>
-      <Carousel.Item>
-      <img
-        className='d-block '
-        src={jordan5}
-        alt='first slide'
-      />
-        <Carousel.Caption>
-{/*           <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-        </Carousel.Caption>
-        <input className='input-button' type="button" value="Detail" />
-      </Carousel.Item>
-      <Carousel.Item>
-      <img
-        className='d-block'
-        src={jordan2}
-        alt='first slide'
-      />
-        <Carousel.Caption>
-{/*           <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p> */}
-        </Carousel.Caption>
-        <input className='input-button' type="button" value="Detail" />
-      </Carousel.Item>
-    </Carousel>
-      </section>
-      <section className='section-carousel'>
-      <Carousel>
-      <Carousel.Item>
-      <img
-        className='d-block '
-        src={jordan4}
-        alt='first slide'
-      />
-        <Carousel.Caption>
-{/*           <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-        </Carousel.Caption>
-        <input className='input-button' type="button" value="Detail" />
-      </Carousel.Item>
-      <Carousel.Item>
-      <img
-        className='d-block '
-        src={jordan5}
-        alt='first slide'
-      />
-        <Carousel.Caption>
-{/*           <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-        </Carousel.Caption>
-        <input className='input-button' type="button" value="Detail" />
-      </Carousel.Item>
-      <Carousel.Item>
-      <img
-        className='d-block'
-        src={jordan2}
-        alt='first slide'
-      />
-        <Carousel.Caption>
-{/*           <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p> */}
-        </Carousel.Caption>
-        <input className='input-button' type="button" value="Detail" />
-      </Carousel.Item>
-    </Carousel>
-      </section>
+              <section className='section-image'>
+              <Carousel responsive={responsive}>
+                    <div className='card'>
+                      <img  className='product-image' src={jordan5} alt="jordan" />
+                      <h2>sport sneaker</h2>
+                      <p className='price'>$98.5</p>
+                      <p className='description'> Air Jordan 4 Retro, un modèle emblématique de la collaboration entre Michael Jordan et Nike.</p>
+                        <button className='card-button'>Add to cart</button>
+                    </div>
+                    <div className='card'>
+                      <img  className='product-image' src={jordan4} alt="jordan" />
+                      <h2>sport sneaker</h2>
+                      <p className='price'>$98.5</p>
+                      <p className='description'> Air Jordan 4 Retro, un modèle emblématique de la collaboration entre Michael Jordan et Nike.</p>
+                        <button className='card-button'>Add to cart</button>
+                    </div>
+                    <div className='card'>
+                      <img  className='product-image' src={jordan4} alt="jordan" />
+                      <h2>sport sneaker</h2>
+                      <p className='price'>$98.5</p>
+                      <p className='description'> Air Jordan 4 Retro, un modèle emblématique de la collaboration entre Michael Jordan et Nike.</p>
+                        <button className='card-button'>Add to cart</button>
+                    </div>
+                    <div className='card'>
+                      <img  className='product-image' src={jordan5} alt="jordan" />
+                      <h2>sport sneaker</h2>
+                      <p className='price'>$98.5</p>
+                      <p className='description'> Air Jordan 4 Retro, un modèle emblématique de la collaboration entre Michael Jordan et Nike.</p>
+                        <button className='card-button'>Add to cart</button>
+                    </div>
+                    <div className='card'>
+                      <img  className='product-image' src={jordan5} alt="jordan" />
+                      <h2>sport sneaker</h2>
+                      <p className='price'>$98.5</p>
+                      <p className='description'> Air Jordan 4 Retro, un modèle emblématique de la collaboration entre Michael Jordan et Nike.</p>
+                        <button className='card-button'>Add to cart</button>
+                    </div>
+              </Carousel>
+              </section>
+              <section className='section-image'>
+              <Carousel responsive={responsive}>
+                    <div className='card'>
+                      <img  className='product-image' src={jordan5} alt="jordan" />
+                      <h2>sport sneaker</h2>
+                      <p className='price'>$98.5</p>
+                      <p className='description'> Air Jordan 4 Retro, un modèle emblématique de la collaboration entre Michael Jordan et Nike.</p>
+                        <button className='card-button'>Add to cart</button>
+                    </div>
+                    <div className='card'>
+                      <img  className='product-image' src={jordan4} alt="jordan" />
+                      <h2>sport sneaker</h2>
+                      <p className='price'>$98.5</p>
+                      <p className='description'> Air Jordan 4 Retro, un modèle emblématique de la collaboration entre Michael Jordan et Nike.</p>
+                        <button className='card-button'>Add to cart</button>
+                    </div>
+                    <div className='card'>
+                      <img  className='product-image' src={jordan4} alt="jordan" />
+                      <h2>sport sneaker</h2>
+                      <p className='price'>$98.5</p>
+                      <p className='description'> Air Jordan 4 Retro, un modèle emblématique de la collaboration entre Michael Jordan et Nike.</p>
+                        <button className='card-button'>Add to cart</button>
+                    </div>
+                    <div className='card'>
+                      <img  className='product-image' src={jordan5} alt="jordan" />
+                      <h2>sport sneaker</h2>
+                      <p className='price'>$98.5</p>
+                      <p className='description'> Air Jordan 4 Retro, un modèle emblématique de la collaboration entre Michael Jordan et Nike.</p>
+                        <button className='card-button'>Add to cart</button>
+                    </div>
+                    <div className='card'>
+                      <img  className='product-image' src={jordan4} alt="jordan" />
+                      <h2>sport sneaker</h2>
+                      <p className='price'>$98.5</p>
+                      <p className='description'> Air Jordan 4 Retro, un modèle emblématique de la collaboration entre Michael Jordan et Nike.</p>
+                        <button className='card-button'>Add to cart</button>
+                    </div>
+              </Carousel>
+              </section>
     </div>
   )
 }
