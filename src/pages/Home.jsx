@@ -52,13 +52,13 @@ function Home() {
                       <p className='description'> Air Jordan 4 Retro, un modèle emblématique de la collaboration entre Michael Jordan et Nike.</p>
                         <button className='card-button'>Add to cart</button>
                     </div>
-                    <div className='card'>
-                      <img  className='product-image' src={jordan4} alt="jordan" />
+                    {/* <div className='card'>
+                      <img  className='product--image' src={jordan4} alt="jordan" />
                       <h2>sport sneaker</h2>
                       <p className='price'>$98.5</p>
                       <p className='description'> Air Jordan 4 Retro, un modèle emblématique de la collaboration entre Michael Jordan et Nike.</p>
                         <button className='card-button'>Add to cart</button>
-                    </div>
+                    </div> */}
                     <div className='card'>
                       <img  className='product-image' src={jordan4} alt="jordan" />
                       <h2>sport sneaker</h2>
