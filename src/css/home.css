@@ -238,9 +238,9 @@ img {
     text-align: center;
     font-family: arial;
   }
-  .card:hover {
+/*   .card:hover {
         transform: scale(0.8);
-  }
+  } */
   
   .price {
     color: grey;
