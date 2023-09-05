@@ -19,11 +19,10 @@ function About() {
                     <button className='castus-button'>Learn More</button>
             </div>
             <div className="castus-image">
-                <img className='cst-image' src={communication} />
+                <img className='cst-image' alt='castus' src={communication} />
             </div>
         </div>
     </section>
   )
 }
-
 export default About

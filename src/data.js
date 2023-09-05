@@ -85,3 +85,145 @@ export const responsive = {
       description: "Some text about the product..",
     },
   ];
+
+
+  // meubles
+
+
+  export const MeubleData = [
+    {
+      id: 1,
+      imageurl:
+        "https://media.istockphoto.com/id/1384257150/fr/photo/composition-%C3%A9l%C3%A9gante-de-lint%C3%A9rieur-moderne-du-salon-avec-fauteuil-frotte-commode-en-bois.webp?b=1&s=612x612&w=0&k=20&c=MMyBzG1SvgEdPTdtfnMnNBG7gixhdbZZOeB1LVZ8pI8=",
+      name: "Meubles de salon",
+      price: "$19.99",
+      description: "Some text about the product..",
+    },
+    {
+      id: 2,
+      imageurl:
+        "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_640.jpg",
+      name: "Meubles confortables",
+      price: "$21.99",
+      description: "Some text about the product..",
+    },
+    {
+      id: 3,
+      imageurl:
+        "https://cdn.pixabay.com/photo/2017/08/02/01/01/living-room-2569325_640.jpg",
+      name: "Meubles",
+      price: "$99.99",
+      description: "Some text about the product..",
+    },
+    {
+      id: 4,
+      imageurl:
+        "https://cdn.pixabay.com/photo/2016/04/18/13/53/room-1336497_640.jpg",
+      name: "Meubles excelent",
+      price: "$14.99",
+      description: "Some text about the product..",
+    },
+    {
+      id: 5,
+      imageurl:
+        "https://cdn.pixabay.com/photo/2016/08/26/15/06/home-1622401_640.jpg",
+      name: "Meubles de qualite",
+      price: "$38.99",
+      description: "Some text about the product..",
+    },
+    {
+      id: 6,
+      imageurl:
+        "https://cdn.pixabay.com/photo/2016/11/19/17/25/furniture-1840463_640.jpg",
+      name: "Table excelent",
+      price: "$149.99",
+      description: "Some text about the product..",
+    },
+    {
+      id: 7,
+      imageurl:
+        "https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_640.jpg",
+      name: "Tables a couper le soufle",
+      price: "$38.99",
+      description: "Some text about the product..",
+    },
+    {
+      id: 8,
+      imageurl:
+        "https://cdn.pixabay.com/photo/2017/03/28/12/11/chairs-2181960_640.jpg",
+      name: "Bureau de qualite",
+      price: "$49.99",
+      description: "Some text about the product..",
+    },
+  ];
+
+
+  // habits et autres
+
+
+  export const costumeData = [
+    {
+      id: 1,
+      imageurl:
+        "https://media.istockphoto.com/id/876424182/fr/photo/chemises-pour-hommes-classique-empil%C3%A9s-sur-fond-blanc.webp?b=1&s=612x612&w=0&k=20&c=XIivwlLZux9USd2kzi7bOlaT-GmQVBlN5ZZfTBt0828=",
+      name: "chemises",
+      price: "$19.99",
+      description: "Some text about the product..",
+    },
+    {
+      id: 2,
+      imageurl:
+        "https://leblogdemonsieur.com/wp-content/uploads/2020/10/chemise-bleue-homme.jpg",
+      name: "Chemises",
+      price: "$21.99",
+      description: "Some text about the product..",
+    },
+    {
+      id: 3,
+      imageurl:
+        "https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=600",
+      name: "chemises",
+      price: "$99.99",
+      description: "Some text about the product..",
+    },
+    {
+      id: 4,
+      imageurl:
+        "https://images.pexels.com/photos/264726/pexels-photo-264726.jpeg?auto=compress&cs=tinysrgb&w=600",
+      name: "Chemises de qualite",
+      price: "$14.99",
+      description: "Some text about the product..",
+    },
+    {
+      id: 5,
+      imageurl:
+        "https://images.pexels.com/photos/2112651/pexels-photo-2112651.jpeg?auto=compress&cs=tinysrgb&w=600",
+      name: "T-shirt de qualités",
+      price: "$38.99",
+      description: "Some text about the product..",
+    },
+    {
+      id: 6,
+      imageurl:
+        "https://images.pexels.com/photos/5698851/pexels-photo-5698851.jpeg?auto=compress&cs=tinysrgb&w=600",
+      name: "T-shirt excelent",
+      price: "$149.99",
+      description: "Some text about the product..",
+    },
+    {
+      id: 7,
+      imageurl:
+        "https://images.pexels.com/photos/4440576/pexels-photo-4440576.jpeg?auto=compress&cs=tinysrgb&w=600",
+      name: "T-shirt a couper le soufle",
+      price: "$38.99",
+      description: "Some text about the product..",
+    },
+    {
+      id: 8,
+      imageurl:
+        "https://images.pexels.com/photos/4440576/pexels-photo-4440576.jpeg?auto=compress&cs=tinysrgb&w=600",
+      name: "T-shirt a couper le soufle",
+      price: "$38.99",
+      description: "Some text about the product..",
+    },
+  ];
